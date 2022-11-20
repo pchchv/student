@@ -28,7 +28,8 @@ public:
 
     void Search(STUDENT *p, int roll, int n)
     {
-        for (int i = 0; i < n; i++)
+        int i = 0;
+        for (i = 0; i < n; i++)
         {
             if (p[i].STU_ROLL == roll)
             {
@@ -77,9 +78,10 @@ public:
 
     int Update(STUDENT *p, int roll, int n)
     {
+        int i = 0;
         int ch1;
 
-        for (int i = 0; i < n; i++)
+        for (i = 0; i < n; i++)
         {
             if (p[i].STU_ROLL == roll)
             {
@@ -126,6 +128,7 @@ public:
         {
             cout << "\nRecord Not Found\n\n";
         }
+        return 0;
     }
 };
 
